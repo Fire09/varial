@@ -1,0 +1,11 @@
+RegisterServerEvent('varial-death:reviveSV')
+AddEventHandler('varial-death:reviveSV', function(t)
+	TriggerClientEvent('varial-death:revive', t)
+    TriggerClientEvent('varial-hospital:client:RemoveBleed', t) 
+    TriggerClientEvent('varial-hospital:client:ResetLimbs', t)
+end)
+
+RegisterServerEvent('varial-death:reviveSV2')
+AddEventHandler('varial-death:reviveSV2', function()
+	TriggerClientEvent('varial-death:revive', source)
+end)

@@ -1,0 +1,109 @@
+-- RegisterNetEvent("rollcash:menu")
+-- AddEventHandler("rollcash:menu", function()
+-- 	TriggerEvent('varial-context:sendMenu', {
+-- 		{
+-- 			id = "1",
+-- 			header = "Clean roll of cash",
+-- 			txt = "Clean your Roll of cash you need 5x roles",
+-- 			params = {
+-- 				event = "varial-jobs:fishing_sell:rollcash",
+-- 			}
+-- 		},
+-- 		{
+-- 			id = "2",
+-- 			header = "Close Menu",
+-- 			txt = "Close menu",
+-- 			params = {
+-- 				event = "",
+-- 			}
+-- 		},
+-- 	})
+-- end)
+
+-- -- clean band of notes
+
+-- RegisterNetEvent("bandnotes:menu")
+-- AddEventHandler("bandnotes:menu", function()
+-- 	TriggerEvent('varial-context:sendMenu', {
+-- 		{
+-- 			id = "1",
+-- 			header = "Clean Band of notes",
+-- 			txt = "Clean band of notes 5x required",
+-- 			params = {
+-- 				event = "varial-jobs:fishing_sell:band",
+-- 			}
+-- 		},
+-- 		{
+-- 			id = "2",
+-- 			header = "Close Menu",
+-- 			txt = "Close menu",
+-- 			params = {
+-- 				event = "",
+-- 			}
+-- 		},
+-- 	})
+-- end)
+
+-- -- Sales
+
+-- -- Bands
+
+-- RegisterNetEvent('varial-jobs:fishing_sell:band')
+-- AddEventHandler('varial-jobs:fishing_sell:band', function()
+--     local pBandAmount = exports["varial-applications"]:KeyboardInput({
+--         header = "How Much Bands?",
+--         rows = {
+--         {
+--             id = 0,
+--             txt = "Input How Much Bands You Want To Sell"
+--         }
+--         }
+--     })
+--     if pBandAmount[1] ~= nil then
+--         if exports['varial-inventory']:hasEnoughOfItem('band', pBandAmount[1].input) then
+--             FreezeEntityPosition(PlayerPedId(), true)
+--             local finished = exports['varial-taskbar']:taskBar(5000*pBandAmount[1].input, 'Washing Bands')
+--             if finished == 100 then
+--                 if exports['varial-inventory']:hasEnoughOfItem('band', pBandAmount[1].input) then
+--                     TriggerEvent('inventory:removeItem', 'band', pBandAmount[1].input)
+-- 					TriggerServerEvent( 'zyloz:payout', math.random(500,1000)*pBandAmount[1].input)
+--                     FreezeEntityPosition(PlayerPedId(), false)
+--                 else
+--                     FreezeEntityPosition(PlayerPedId(), false)
+--                     TriggerEvent('DoLongHudText', 'Might wanna try again', 2)
+--                 end
+--             end
+--         end
+--     end
+-- end)
+
+-- -- Rollcash
+
+-- RegisterNetEvent('varial-jobs:fishing_sell:rollcash')
+-- AddEventHandler('varial-jobs:fishing_sell:rollcash', function()
+--     local pRollCashAmount = exports["varial-applications"]:KeyboardInput({
+--         header = "How Much Cash Rolls?",
+--         rows = {
+--         {
+--             id = 0,
+--             txt = "Input How Much Cash Rolls You Want To Sell"
+--         }
+--         }
+--     })
+--     if pRollCashAmount[1] ~= nil then
+--         if exports['varial-inventory']:hasEnoughOfItem('rollcash', pRollCashAmount[1].input) then
+--             FreezeEntityPosition(PlayerPedId(), true)
+--             local finished = exports['varial-taskbar']:taskBar(3500*pRollCashAmount[1].input, 'Washing Roll Cash')
+--             if finished == 100 then
+--                 if exports['varial-inventory']:hasEnoughOfItem('rollcash', pRollCashAmount[1].input) then
+--                     TriggerEvent('inventory:removeItem', 'rollcash', pRollCashAmount[1].input)
+-- 					TriggerServerEvent( 'zyloz:payout', math.random(200,400)*pRollCashAmount[1].input)
+--                     FreezeEntityPosition(PlayerPedId(), false)
+--                 else
+--                     FreezeEntityPosition(PlayerPedId(), false)
+--                     TriggerEvent('DoLongHudText', 'Might wanna try again', 2)
+--                 end
+--             end
+--         end
+--     end
+-- end)
