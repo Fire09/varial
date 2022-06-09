@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SInteriorOrderData>
+    <startFrom value="2000" />
+    <filePathHash value="0" />
+    <proxies>
+        <Item>bs_distantlights</Item>
+        <Item>bs_int</Item>
+        <Item>bs_extprops</Item>
+        <Item>bs_streetlights</Item>
+        <Item>hei_sm_19</Item>
+        <Item>hei_vb_03_strm_0</Item>
+        <Item>bs_lodlights</Item>
+        <Item>hei_vb_rd_strm_0</Item>
+        <Item>bs_int_lod1</Item>
+        <Item>vb_03_strm_0</Item>
+        <Item>vw_distlodlights_small024</Item>
+        <Item>vb_occl_01</Item>
+        <Item>vw_lodlights_small024</Item>
+        <Item>hei_vb_03</Item>
+    </proxies>
+</SInteriorOrderData>

@@ -1,0 +1,98 @@
+--Name: 1 | 2022-06-02T01:26:38Z
+BoxZone:Create(vector3(546.35, -165.18, 54.49), 3, 2, {
+  name="1",
+  heading=0,
+  --debugPoly=true
+})
+
+--Name: .5 | 2022-06-02T02:01:46Z
+CircleZone:Create(vector3(547.86, -182.73, 54.49), 0.5, {
+  name=".5",
+  useZ=false,
+  --debugPoly=true
+})
+
+--Name: 1 | 2022-06-02T02:13:38Z
+BoxZone:Create(vector3(544.93, -201.7, 54.49), 1, 1, {
+  name="1",
+  heading=0,
+  --debugPoly=true
+})
+
+--Name: 1 | 2022-06-02T18:59:27Z
+BoxZone:Create(vector3(837.68, -814.65, 26.35), 4, 2, {
+  name="1",
+  heading=0,
+  --debugPoly=true
+})
+
+--Name: 1 | 2022-06-02T19:00:24Z
+BoxZone:Create(vector3(836.82, -808.38, 26.33), 2, 2, {
+  name="1",
+  heading=0,
+  --debugPoly=true
+})
+
+--Name: 1 | 2022-06-02T19:48:17Z
+BoxZone:Create(vector3(188.04, -243.56, 54.07), 0.5, 0.3, {
+  name="1",
+  heading=0,
+  --debugPoly=true
+})
+
+--Name: 5 | 2022-06-02T19:52:50Z
+BoxZone:Create(vector3(189.07, -241.07, 54.07), 0.5, 0.5, {
+  name="5",
+  heading=0,
+  --debugPoly=true
+})
+
+--Name: 2 | 2022-06-02T20:35:30Z
+BoxZone:Create(vector3(128.59, -3007.99, 7.04), 2.5, 2.5, {
+  name="2",
+  heading=0,
+  --debugPoly=true
+})
+
+--Name: 1 | 2022-06-03T16:03:03Z
+BoxZone:Create(vector3(128.52, -3014.72, 7.04), 2.5, 2.5, {
+  name="1",
+  heading=0,
+  --debugPoly=true
+})
+
+--Name: 1 | 2022-06-03T16:13:17Z
+BoxZone:Create(vector3(128.57, -3008.36, 7.04), 2.5, 2.5, {
+  name="1",
+  heading=0,
+  --debugPoly=true
+})
+
+--Name: 1 | 2022-06-03T16:24:15Z
+BoxZone:Create(vector3(953.12, -977.77, 39.5), 5, 2, {
+  name="1",
+  heading=0,
+  --debugPoly=true
+})
+
+--Name: 1 | 2022-06-03T16:26:11Z
+BoxZone:Create(vector3(946.93, -970.41, 39.5), 2, 2, {
+  name="1",
+  heading=0,
+  --debugPoly=true
+})
+
+--Name: 1 | 2022-06-03T16:26:17Z
+BoxZone:Create(vector3(947.82, -970.29, 39.5), 4, 1, {
+  name="1",
+  heading=0,
+  --debugPoly=true
+})
+
+--Name: 1 | 2022-06-03T16:28:46Z
+BoxZone:Create(vector3(937.69, -985.74, 39.5), 7, 1.5, {
+  name="1",
+  heading=0,
+  --debugPoly=true
+})
+
